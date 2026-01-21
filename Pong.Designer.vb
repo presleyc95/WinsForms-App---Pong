@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class Pong
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,30 +22,30 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Panel1 = New Panel()
+        pnlMenuContainer = New Panel()
         btnStart = New Button()
         btnReset = New Button()
         lblP2Score = New Label()
         lblP1Score = New Label()
         lblP2 = New Label()
         lblP1 = New Label()
-        Panel1.SuspendLayout()
+        pnlMenuContainer.SuspendLayout()
         SuspendLayout()
         ' 
-        ' Panel1
+        ' pnlMenuContainer
         ' 
-        Panel1.BackColor = SystemColors.ActiveBorder
-        Panel1.BorderStyle = BorderStyle.Fixed3D
-        Panel1.Controls.Add(btnStart)
-        Panel1.Controls.Add(btnReset)
-        Panel1.Controls.Add(lblP2Score)
-        Panel1.Controls.Add(lblP1Score)
-        Panel1.Controls.Add(lblP2)
-        Panel1.Controls.Add(lblP1)
-        Panel1.Location = New Point(0, 0)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(685, 100)
-        Panel1.TabIndex = 0
+        pnlMenuContainer.BackColor = SystemColors.ActiveBorder
+        pnlMenuContainer.BorderStyle = BorderStyle.Fixed3D
+        pnlMenuContainer.Controls.Add(btnStart)
+        pnlMenuContainer.Controls.Add(btnReset)
+        pnlMenuContainer.Controls.Add(lblP2Score)
+        pnlMenuContainer.Controls.Add(lblP1Score)
+        pnlMenuContainer.Controls.Add(lblP2)
+        pnlMenuContainer.Controls.Add(lblP1)
+        pnlMenuContainer.Location = New Point(0, 0)
+        pnlMenuContainer.Name = "pnlMenuContainer"
+        pnlMenuContainer.Size = New Size(685, 100)
+        pnlMenuContainer.TabIndex = 0
         ' 
         ' btnStart
         ' 
@@ -103,25 +103,25 @@ Partial Class Form1
         lblP1.TabIndex = 0
         lblP1.Text = "Player 1"
         ' 
-        ' Form1
+        ' Pong
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ActiveCaptionText
         ClientSize = New Size(684, 661)
-        Controls.Add(Panel1)
+        Controls.Add(pnlMenuContainer)
         FormBorderStyle = FormBorderStyle.FixedSingle
         KeyPreview = True
         MaximizeBox = False
         MinimizeBox = False
-        Name = "Form1"
-        Text = "Form1"
-        Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
+        Name = "Pong"
+        Text = "Pong"
+        pnlMenuContainer.ResumeLayout(False)
+        pnlMenuContainer.PerformLayout()
         ResumeLayout(False)
     End Sub
 
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents pnlMenuContainer As Panel
     Friend WithEvents lblP2 As Label
     Friend WithEvents lblP1 As Label
     Friend WithEvents lblP1Score As Label

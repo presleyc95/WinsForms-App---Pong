@@ -1,7 +1,7 @@
 ﻿Imports System.Drawing.Imaging
 Imports System.Numerics
 
-Public Class Form1
+Public Class Pong
 
 
     Private WithEvents gameTimer As New Timer()
@@ -11,7 +11,7 @@ Public Class Form1
     Private moveUpP1, moveDownP1, moveUpP2, moveDownP2 As Boolean
 
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Pong_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         InitializeGame()
 
