@@ -21,7 +21,7 @@ Public Class Form1
         player1 = New Character With {.X = 20, .Y = Me.ClientSize.Height / 2}
         player2 = New Character With {.X = Me.ClientSize.Width - 35, .Y = Me.ClientSize.Height / 2}
 
-        pong = New Ball With {.X = Me.ClientSize.Width \ 2, .Y = Me.ClientSize.Height \ 2}
+        pong = New Ball With {.X = Me.ClientSize.Width \ 2, .Y = Me.ClientSize.Height \ 2 + 15}
 
         lblP1Score.Text = "0"
         lblP2Score.Text = "0"
@@ -78,12 +78,12 @@ Public Class Form1
             pong.Dy = Math.Sign(offset) * Math.Min(6, Math.Max(1, Math.Abs(offset) \ 10))
         End If
 
-        If lblP1Score.Text = 3 Then
+        If lblP1Score.Text = 5 Then
             gameTimer.Stop()
             MessageBox.Show("Player 1 Wins!!")
         End If
 
-        If lblP2Score.Text = 3 Then
+        If lblP2Score.Text = 5 Then
             gameTimer.Stop()
             MessageBox.Show("Player 2 Wins!!")
         End If

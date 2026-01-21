@@ -3,7 +3,7 @@
     Public Property Y As Integer
     Public Property Width As Integer = 15
     Public Property Height As Integer = 60
-    Public Property Speed As Integer = 4
+    Public Property Speed As Decimal = 3.5
 
     Public ReadOnly Property Bounds As Rectangle
         Get
@@ -22,8 +22,8 @@ Public Class Ball
     Public Property Y As Integer
     Public Property Width As Integer = 15
     Public Property Height As Integer = 15
-    Public Property Dx As Integer = 5
-    Public Property Dy As Integer = 5
+    Public Property Dx As Integer = 4
+    Public Property Dy As Integer = 2
 
     Public ReadOnly Property Bounds As Rectangle
         Get
